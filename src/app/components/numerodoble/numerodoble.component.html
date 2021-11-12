@@ -1,0 +1,8 @@
+<div>
+    <h2>Número doble</h2>
+    <h3 *ngIf="numero">El doble de {{numero}} es {{numero*2}}</h3>
+    <h3 *ngIf="!numero">No hay parámetro en la URL</h3>
+    <button (click)="redirect(18)">18</button>
+    <button (click)="redirect(69)">69</button>
+    <button (click)="redirect(100)">100</button>
+</div>
