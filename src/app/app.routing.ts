@@ -9,6 +9,8 @@ import { TelevisionComponent } from "./components/television/television.componen
 import { Error404Component } from "./components/error404/error404.component";
 import { NumerodobleComponent } from "./components/numerodoble/numerodoble.component";
 import { CollatzComponent } from "./components/collatz/collatz.component";
+import { CocheComponent } from "./components/coche/coche.component";
+import { ConcesionarioComponent } from "./components/concesionario/concesionario.component";
 
 //DEFINIMOS EL ARRAY DE RUTAS PARA LA NAVEGACION QUE ES DE TIPO routes
 
@@ -16,6 +18,8 @@ const appRoutes: Routes = [
     //EN path LA BARRA YA ESTÁ IMPLÍCITA
     {path: "", component: HomeComponent},
     {path: "home", component: HomeComponent},
+    {path: "concesionario", component: ConcesionarioComponent},
+    {path: "coches", component: CocheComponent},
     {path: "musica", component: MusicaComponent},
     {path: "television", component: TelevisionComponent},
     {path: "cine", component: CineComponent},

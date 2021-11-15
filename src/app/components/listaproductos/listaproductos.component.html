@@ -1,0 +1,19 @@
+<div style="margin: 0 auto;">
+    <h2>Lista de productos</h2>
+    <table *ngIf="productos.length > 0" style="margin: 0 auto;" border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of productos">
+                <td>{{prod.nombre}}</td>
+                <td>{{prod.precio}} €</td>
+                <td><img src="{{prod.imagen}}" height="100px" width="100px"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

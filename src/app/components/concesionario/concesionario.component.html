@@ -1,0 +1,11 @@
+<div>
+    <h1>Concesionario de coches</h1>
+    <div style="background-color: lightseagreen; color: white;">
+        {{mensaje}}
+    </div>
+    <hr>
+    <app-coche *ngFor="let coche of coches" 
+        [car]="coche"
+        (seleccionarCoche)="seleccionarCochePadre($event)"
+    ></app-coche>
+</div>
